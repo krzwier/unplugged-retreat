@@ -168,6 +168,7 @@ header nav ul {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     
 }
 
@@ -182,7 +183,7 @@ header nav ul li a {
 
 
 footer .content-wrapper {
-
+    width: 60%;
 }
 
 footer .footer-content {
@@ -190,11 +191,31 @@ footer .footer-content {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    padding: 30px 0;
 }
 
-footer .contact {}
+footer .contact {
+    width: 100%;
+    text-align: center;
+}
 
-footer .social {}
+footer h3 {
+    text-align: center;
+}
+
+footer .contact address {
+    font-style: normal;
+}
+
+footer .contact address a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer .social {
+    width: 100%;
+    padding-top: 0.75em;
+}
 
 footer .social-icons {
     display: flex;
@@ -203,9 +224,15 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+    display: flex;
+    justify-content: space-between;
 }
 
-footer .copyright {}
+footer .copyright {
+    text-align: center;
+    padding: 5px 0;
+
+}
 
 /* ---- Mobile Styles - Homepage ---- */
 
@@ -266,6 +293,7 @@ aside .form #download-itinerary-button {
     font-size: 1.125em;
     text-transform: uppercase;
     color: #FFFFFF;
+    border: none;
 }
 
 .features {
@@ -286,7 +314,7 @@ aside .form #download-itinerary-button {
     width: 100%;
 }
 
-.features-items {
+.features .features-items {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -309,10 +337,20 @@ aside .form #download-itinerary-button {
 }
 
 .reviews {
+    background-color: #2a423a;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    padding-bottom: 2em;
+}
+
+.reviews .content-wrapper {
+    width: 90%;
+}
+
+.reviews img {
+    width: 100%;
 }
 
 .reviews article {
