@@ -139,11 +139,6 @@ header, footer {
     width: 100%;
 }
 
-header {
-    
-}
-
-
 header .content-wrapper {
     display: flex;
     justify-content: center;
@@ -170,7 +165,6 @@ header nav {
     justify-content: space-around;
     align-items: center;
     flex-flow: row nowrap;
-    /*padding: 15px 0;*/
     width: 60%;
     
 }
@@ -234,7 +228,7 @@ footer .copyright {
 /* ---- Mobile Styles - Homepage ---- */
 
 .hero-area {
-    background: url(../img/jake-melara-30679-unsplash.jpg);
+    background: url(../img/jake-melara-30679-unsplash-tablet.jpg);
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -346,7 +340,7 @@ aside .form #download-itinerary-button {
     width: 90%;
 }
 
-.reviews img {
+.reviews .review-img {
     width: 100%;
 }
 
@@ -500,12 +494,151 @@ aside .form #download-itinerary-button {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
+   
+    /* ---- Tablet styles ---- */
 
-@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+    @media only screen and (min-width: 768px) {
+        
+        h1 { 
+            font-size: 3em;
+            line-height: 1;
+        }
+
+        h2 {
+            font-size: 2.25em;
+            line-height: 1.33;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            line-height: 1.25;
+        }
+
+        header .content-wrapper {
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            width: 85%;
+        }
+
+        header .content-wrapper .logo {
+            text-align: left;
+            border: none;
+            padding: 1em 0 1em 0;
+        }
+
+        header .content-wrapper a img {
+            width: 50%;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 50%;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: space-between;
+            width: 130px;
+            align-items: center;
+            margin: 0;
+        }
+
+        .hero-area {
+            height: 600px;
+        }
+
+        .hero-area .content-wrapper {
+            width: 85%;
+            padding: 3.5em;
+        }
+
+        aside .content-wrapper {
+            padding: 25px 0 40px 0;
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-flow: row nowrap;
+            
+        }
+
+        aside .content-wrapper .form-description {
+            width: 46%;
+            
+        }
+
+        aside .content-wrapper .form {
+
+            width: 46%;
+            
+        }
+
+        .features .content-wrapper {
+            width: 85%;
+            padding: 60px 0 70px 0;
+        }
+
+        .features .content-wrapper .features-items {
+            justify-content: space-between;
+            flex-flow: row wrap;
+        }
+
+        .features-items article {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column nowrap;
+        }
+
+        .features-items article p {
+            width: 60%;
+        }
+
+        .reviews {
+            padding: 70px 0 100px 0;
+        }
+
+        .reviews .content-wrapper {
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-flow: row nowrap;
+        }
+
+        .review-image, .review-description {
+            width: 47%;
+        }
+
+        .review-description h3 {
+            margin: 0;
+        }
+
+        footer .content-wrapper {
+            width: 85%;
+        }
+
+        footer .footer-content {
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-flow: row nowrap;
+            padding: 75px 0;
+
+        }
+
+        footer h3 {
+            margin-bottom: 35px;
+        }
+
+    }
+
+
+
+    @media only screen and (min-width: 1200px) {
+
 }
 
 /* ==========================================================================
