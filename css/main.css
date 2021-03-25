@@ -85,6 +85,10 @@ textarea {
 
 /* ---- Global styles ---- */
 
+.content-wrapper {
+    width: 90%;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     color: #FFFFFF;
@@ -109,13 +113,10 @@ h2 {
 
 h3 {
     font-size: 1.125em;
-    margin-block-end: 0;
 }
 
 p {
     font-size: 0.875em;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
 }
 
 a {
@@ -127,16 +128,12 @@ address {
     font-style: normal;
 }
 
+/* ---- Header ---- */
 
-
-/* ---- Base Header-Footer Styles ---- */
-
-header, footer {
+header {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
-    width: 100%;
 }
 
 header .content-wrapper {
@@ -144,29 +141,33 @@ header .content-wrapper {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+}
+
+header .logo {
+    text-align: center;
+    width: 60%;
+    margin: 15px 0 10px 0;
+}
+
+header .logo img {
     width: 100%;
 }
 
-header .content-wrapper .logo {
-    text-align: center;
-    padding: 1em 0 0.7em 0;
-    border-bottom: 1px solid #3a3a3a;
-}
-
-header .content-wrapper a img {
-    width: 60%
+header .header-divider {
+    background-color: #3a3a3a;
+    height: 1px;
+    margin: 0;
+    width: 100%;
 }
 
 header nav {
     font-size: 1.125em;
     font-weight: bold;
     text-transform: uppercase;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: row nowrap;
     width: 60%;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header nav ul {
@@ -175,42 +176,50 @@ header nav ul {
     justify-content: space-around;
     align-items: center;
     padding: 0;
-    
 }
 
 header nav ul li {
     display: inline;
 }
 
-footer .content-wrapper {
-    width: 60%;
-}
-
-footer .footer-content {
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    padding: 30px 0;
 }
+
+footer .content-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
 
 footer .contact {
-    width: 100%;
-    text-align: center;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    
 }
 
-footer h3 {
+footer h3, address {
+    width: 100%;
     text-align: center;
 }
 
 footer .social {
-    width: 100%;
+    width: 60%;
     padding-top: 0.75em;
 }
 
 footer .social-icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -222,10 +231,9 @@ footer .social-icons p {
 footer .copyright {
     text-align: center;
     padding: 5px 0;
-
 }
 
-/* ---- Mobile Styles - Homepage ---- */
+/* ---- Homepage ---- */
 
 .hero-area {
     background: url(../img/jake-melara-30679-unsplash-tablet.jpg);
@@ -238,11 +246,6 @@ footer .copyright {
     padding: 1em 0;
 }
 
-.hero-area .content-wrapper {
-    width: 90%;
-
-}
-
 aside {
     background-color: #527158;
     display: flex;
@@ -252,10 +255,8 @@ aside {
 }
 
 aside .content-wrapper {
-    width: 90%;
     padding: 10px 0 30px 0;
 }
-
 
 aside .form {
     display: flex;
@@ -297,7 +298,6 @@ aside .form #download-itinerary-button {
 }
 
 .features .content-wrapper {
-    width: 90%;
     padding: 25px 0;
 }
 
@@ -336,16 +336,11 @@ aside .form #download-itinerary-button {
     padding-bottom: 2em;
 }
 
-.reviews .content-wrapper {
-    width: 90%;
-}
-
 .reviews .review-img {
     width: 100%;
 }
 
-
-/* ---- Mobile Styles - About Page ---- */
+/* ---- About Page ---- */
 
 .mission {
     background-color: #527158;
@@ -356,7 +351,6 @@ aside .form #download-itinerary-button {
 }
 
 .mission .content-wrapper {
-    width: 90%;
     padding: 10px 0 30px 0;
 }
 
@@ -374,14 +368,11 @@ aside .form #download-itinerary-button {
     padding: 50px 0;
 }
 
-.contact-section .content-wrapper {
-    width: 90%;
-}
-
 .contact-section .content-wrapper h2 {
     margin: 0;
 }
-/* ---- Mobile Styles - FAQ Page ---- */
+
+/* ---- FAQ Page ---- */
 
 .faq {
     background-color: #527158;
@@ -390,7 +381,6 @@ aside .form #download-itinerary-button {
     align-items: center;
     flex-flow: row wrap;
     width: 100%;
-
 }
 
 .faq .content-wrapper {
@@ -399,15 +389,12 @@ aside .form #download-itinerary-button {
     align-items: center;
     flex-flow: row wrap;
     width: 90%;
-    
 }
 
 .faq .content-wrapper article {
     width: 100%;
     padding-bottom: 20px;
 }
-
-
 
 /* ==========================================================================
    Helper classes
@@ -494,152 +481,116 @@ aside .form #download-itinerary-button {
    Modify as content requires.
    ========================================================================== */
 
-   
-    /* ---- Tablet styles ---- */
+/* ---- Tablet styles ---- */
 
-    @media only screen and (min-width: 768px) {
-        
-        h1 { 
-            font-size: 3em;
-            line-height: 1;
-        }
-
-        h2 {
-            font-size: 2.25em;
-            line-height: 1.33;
-        }
-
-        h3 {
-            font-size: 1.5em;
-            line-height: 1.25;
-        }
-
-        header .content-wrapper {
-            flex-flow: row nowrap;
-            justify-content: space-between;
-            width: 85%;
-        }
-
-        header .content-wrapper .logo {
-            text-align: left;
-            border: none;
-            padding: 1em 0 1em 0;
-        }
-
-        header .content-wrapper a img {
-            width: 50%;
-        }
-
-        header nav {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            width: 50%;
-        }
-
-        header nav ul {
-            display: flex;
-            justify-content: space-between;
-            width: 130px;
-            align-items: center;
-            margin: 0;
-        }
-
-        .hero-area {
-            height: 600px;
-        }
-
-        .hero-area .content-wrapper {
-            width: 85%;
-            padding: 3.5em;
-        }
-
-        aside .content-wrapper {
-            padding: 25px 0 40px 0;
-            width: 85%;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-flow: row nowrap;
-            
-        }
-
-        aside .content-wrapper .form-description {
-            width: 46%;
-            
-        }
-
-        aside .content-wrapper .form {
-
-            width: 46%;
-            
-        }
-
-        .features .content-wrapper {
-            width: 85%;
-            padding: 60px 0 70px 0;
-        }
-
-        .features .content-wrapper .features-items {
-            justify-content: space-between;
-            flex-flow: row wrap;
-        }
-
-        .features-items article {
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-flow: column nowrap;
-        }
-
-        .features-items article p {
-            width: 60%;
-        }
-
-        .reviews {
-            padding: 70px 0 100px 0;
-        }
-
-        .reviews .content-wrapper {
-            width: 85%;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-flow: row nowrap;
-        }
-
-        .review-image, .review-description {
-            width: 47%;
-        }
-
-        .review-description h3 {
-            margin: 0;
-        }
-
-        footer .content-wrapper {
-            width: 85%;
-        }
-
-        footer .footer-content {
-            justify-content: space-around;
-            align-items: flex-start;
-            flex-flow: row nowrap;
-            padding: 75px 0;
-
-        }
-
-        footer h3 {
-            margin-bottom: 35px;
-        }
-
+@media only screen and (min-width: 768px) {
+    .content-wrapper {
+        width: 85%;
     }
-
-
-
-    @media only screen and (min-width: 1200px) {
-
+    h1 {
+        font-size: 3em;
+        line-height: 1;
+    }
+    h2 {
+        font-size: 2.25em;
+        line-height: 1.33;
+    }
+    h3 {
+        font-size: 1.5em;
+        line-height: 1.25;
+    }
+    header .content-wrapper {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    header .content-wrapper .logo {
+        text-align: left;
+        border: none;
+        padding: 1em 0 1em 0;
+        width: 50%;
+    }
+    header .logo img {
+        width: 67.5%
+    }
+    .header-divider {
+        width: 0;
+    }
+    header nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 50%;
+    }
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        align-items: center;
+        margin: 0;
+    }
+    .hero-area {
+        height: 600px;
+    }
+    .hero-area .content-wrapper {
+        padding: 3.5em;
+    }
+    aside .content-wrapper {
+        padding: 25px 0 40px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-flow: row nowrap;
+    }
+    aside .content-wrapper .form-description {
+        width: 46%;
+    }
+    aside .content-wrapper .form {
+        width: 46%;
+    }
+    .features .content-wrapper {
+        padding: 60px 0 70px 0;
+    }
+    .features .content-wrapper .features-items {
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+    .features-items article {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+    }
+    .features-items article p {
+        width: 60%;
+    }
+    .reviews {
+        padding: 70px 0 100px 0;
+    }
+    .reviews .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-flow: row nowrap;
+    }
+    .review-image, .review-description {
+        width: 47%;
+    }
+    .review-description h3 {
+        margin: 0;
+    }
+    footer .footer-content {
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-flow: row nowrap;
+        padding: 75px 0;
+    }
+    footer h3 {
+        margin-bottom: 35px;
+    }
 }
+
+@media only screen and (min-width: 1200px) {}
 
 /* ==========================================================================
    Print styles.
