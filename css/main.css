@@ -85,18 +85,22 @@ textarea {
 
 /* ---- Global styles for mobile ---- */
 
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #202322;
+    color: #e2e3ed;
+}
+
 .content-wrapper {
     width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    color: #FFFFFF;
-    background-color: #202322;
 }
 
 h1, h2, h3 {
@@ -127,7 +131,7 @@ p {
 
 a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #e2e3ed;
 }
 
 address {
@@ -183,6 +187,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    color: #FFFFFF;
 }
 
 footer .footer-content {
@@ -284,6 +289,10 @@ aside h3 {
 
 aside .form input {
     width: 100%;
+    background-color: #e1e2ea;
+    border: none;
+    color: #9d9ea4;
+    font-size: 0.875em;
     line-height: 3em;
 }
 
@@ -297,7 +306,6 @@ aside .form #download-itinerary-button {
     font-family: 'Poppins', sans-serif;
     font-size: 1.125em;
     text-transform: uppercase;
-    color: #FFFFFF;
     border: none;
     margin: 16px 0 50px 0;
 }
