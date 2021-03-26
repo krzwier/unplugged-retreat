@@ -202,6 +202,11 @@ footer .contact {
     flex-flow: row wrap;
 }
 
+footer h3 {
+    text-align: center;
+    width: 100%;
+}
+
 footer address p{
     text-align: center;
     line-height: 1.2;
@@ -353,11 +358,15 @@ aside .form #download-itinerary-button {
 }
 
 .mission .content-wrapper {
-    padding: 10px 0 30px 0;
+    padding: 45px 0;
 }
 
-.mission .content-wrapper p {
-    padding: 5px 0;
+.mission p {
+    padding-top: 16px;
+}
+
+.mission h2 {
+    margin: 0;
 }
 
 .contact-section {
@@ -367,7 +376,11 @@ aside .form #download-itinerary-button {
     align-items: center;
     flex-flow: row wrap;
     width: 100%;
-    padding: 50px 0;
+    padding: 45px 0;
+}
+
+.contact-section .content-wrapper {
+    justify-content: flex-start;
 }
 
 .contact-section .content-wrapper h2 {
@@ -382,12 +395,16 @@ aside .form #download-itinerary-button {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    width: 100%;
+    padding-top: 25px;
 }
 
-.faq .content-wrapper article {
+.faq article {
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 45px;
+}
+
+.faq h3 {
+    margin: 10px 0;
 }
 
 /* ==========================================================================
@@ -565,8 +582,8 @@ aside .form #download-itinerary-button {
         align-items: flex-start;
     }
     .features article {
-        width: 31%;
-        padding: 10px 25px;
+        flex-basis: 31%;
+        padding: 0 25px;
     }
     .reviews {
         padding: 70px 0 100px 0;
@@ -582,6 +599,53 @@ aside .form #download-itinerary-button {
     }
     .review-description h3 {
         margin: 0 0 16px 0;
+    }
+
+    .mission .mission-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .mission p {
+        width: 45%;
+    }
+
+    .contact-section {
+        padding: 70px 0;
+    }
+
+    .contact-section .content-wrapper {
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 25px 0;
+    }
+
+    .general-info, .facilitator-info {
+        width: 45%;
+    }
+
+    .contact-section h3 {
+        margin: 0 0 16px 0;
+    }
+
+
+    .faq {
+        padding: 60px 0;
+    }
+    .faq .content-wrapper {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .faq article {
+        flex-basis: 47%;
+        padding-bottom: 35px;
+    }
+
+    .faq h3 {
+        font-size: 0.875em;
+        line-height: 1.3;
     }
     
 }
