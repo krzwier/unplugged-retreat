@@ -165,7 +165,6 @@ header nav {
     font-weight: bold;
     text-transform: uppercase;
     width: 60%;
-    
 }
 
 header nav ul {
@@ -207,7 +206,7 @@ footer h3 {
     width: 100%;
 }
 
-footer address p{
+footer address p {
     text-align: center;
     line-height: 1.2;
 }
@@ -242,6 +241,7 @@ footer .copyright {
 /***** ---- Homepage ---- *****/
 
 /* ---- Hero Area ---- */
+
 .hero-area {
     background: url(../img/jake-melara-30679-unsplash.jpg);
     background-size: cover;
@@ -257,6 +257,7 @@ footer .copyright {
 }
 
 /* ---- E-mail form ---- */
+
 aside {
     background-color: #527158;
     display: flex;
@@ -265,7 +266,12 @@ aside {
     flex-flow: row wrap;
 }
 
+aside .form-description {
+    width: 100%;
+}
+
 aside .form {
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -358,7 +364,9 @@ aside .form #download-itinerary-button {
 }
 
 .mission .content-wrapper {
+    justify-content: flex-start;
     padding: 45px 0;
+    
 }
 
 .mission p {
@@ -375,15 +383,17 @@ aside .form #download-itinerary-button {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    width: 100%;
     padding: 45px 0;
 }
 
+.contact-section .contact-info {
+    width: 100%;
+}
 .contact-section .content-wrapper {
     justify-content: flex-start;
 }
 
-.contact-section .content-wrapper h2 {
+.contact-section h2 {
     margin: 0;
 }
 
@@ -396,6 +406,10 @@ aside .form #download-itinerary-button {
     align-items: center;
     flex-flow: row wrap;
     padding-top: 25px;
+}
+
+.faq .content-wrapper {
+    justify-content: flex-start;
 }
 
 .faq article {
@@ -495,6 +509,9 @@ aside .form #download-itinerary-button {
 /* ---- Tablet styles ---- */
 
 @media only screen and (min-width: 768px) {
+    
+    /* Global (Tablet) */
+
     .content-wrapper {
         width: 85%;
     }
@@ -510,6 +527,9 @@ aside .form #download-itinerary-button {
         font-size: 1.5em;
         line-height: 1.25;
     }
+
+    /* Header (Tablet)*/
+    
     header .content-wrapper {
         justify-content: space-between;
         flex-flow: row nowrap;
@@ -537,6 +557,9 @@ aside .form #download-itinerary-button {
         width: 40%;
         align-items: center;
     }
+
+    /* Footer (Tablet) */
+
     footer .footer-content {
         justify-content: space-around;
         align-items: flex-start;
@@ -555,12 +578,19 @@ aside .form #download-itinerary-button {
         padding: 16px 0;
     }
 
+    /* ---- Homepage (Tablet) ---- */
+
+    /* Hero Section (Tablet) */
+
     .hero-area {
         height: 600px;
     }
     .hero-area .content-wrapper {
         padding-top: 67px;
     }
+
+    /* Email form (Tablet)*/
+
     aside .content-wrapper {
         justify-content: space-between;
         align-items: flex-start;
@@ -573,6 +603,9 @@ aside .form #download-itinerary-button {
     aside .content-wrapper .form {
         width: 46%;
     }
+
+    /* Amenities Section (Tablet) */
+
     .features .content-wrapper {
         padding: 60px 0 70px 0;
     }
@@ -582,9 +615,11 @@ aside .form #download-itinerary-button {
         align-items: flex-start;
     }
     .features article {
-        flex-basis: 31%;
-        padding: 0 25px;
+        flex-basis: 35%;
     }
+
+    /* Reviews Section (Tablet) */
+
     .reviews {
         padding: 70px 0 100px 0;
     }
@@ -601,56 +636,173 @@ aside .form #download-itinerary-button {
         margin: 0 0 16px 0;
     }
 
+    /* ---- About Page (Tablet) ---- */
+
+    /* Mission Section (Tablet) */
+
     .mission .mission-content {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
     }
-
     .mission p {
         width: 45%;
     }
 
+    /* Contact Section (Tablet) */
+
     .contact-section {
         padding: 70px 0;
     }
-
-    .contact-section .content-wrapper {
+    .contact-info {
+        display: flex;
         justify-content: space-between;
         align-items: flex-start;
         padding: 25px 0;
     }
-
     .general-info, .facilitator-info {
-        width: 45%;
+        flex-basis: 45%;
     }
-
     .contact-section h3 {
         margin: 0 0 16px 0;
     }
 
+    /* ---- FAQ Page (Tablet) ---- */
+
+    /* FAQ Section (Tablet) */
 
     .faq {
         padding: 60px 0;
     }
-    .faq .content-wrapper {
+    .faq .faq-items {
+        display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        flex-flow: row wrap;
     }
-
     .faq article {
-        flex-basis: 47%;
+        flex-basis: 45%;
         padding-bottom: 35px;
     }
-
     .faq h3 {
         font-size: 0.875em;
         line-height: 1.3;
     }
-    
 }
 
-@media only screen and (min-width: 1200px) {}
+/* ---- Desktop styles ----*/
+
+@media only screen and (min-width: 1200px) {
+    
+    /* Global Styles (Desktop) */
+
+    .content-wrapper {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 3.75em;
+        line-height: 1.2;
+        width: 700px;
+    }
+
+    h2 {
+        line-height: 1.2;
+    }
+
+    h3 {
+        font-size: 1.875em;
+        line-height: 1.2;
+    }
+
+    p {
+        font-size: 1.125em;
+        line-height: 1.33;
+    }
+
+    /* Header (Desktop) */
+
+    header .logo img{
+        max-width: 300px;
+    }
+
+    header nav ul {
+        max-width: 180px;
+    }
+
+    /* ---- Homepage (Desktop) ---- */
+
+    /* Hero Section (Desktop) */
+
+    .hero-area .content-wrapper {
+        padding: 0;
+    }
+
+    .hero-area .content-wrapper {
+        justify-content: flex-start;
+    }
+
+    /* Email Form (Desktop) */
+
+    aside .content-wrapper {
+        justify-content: space-around;
+    }
+
+    aside .form-description, .form {
+        flex-basis: 35%;
+    }
+
+    /* Amenities Section (Desktop) */
+
+    .features .features-items {
+        padding: 50px 0 15px 0;
+    }
+
+    .features article {
+        flex-basis: 26%;
+    }
+
+    /* Reviews Section (Desktop) */
+
+    .reviews .content-wrapper {
+        padding-top: 60px;
+    }
+
+    /* ---- About Page (Desktop) ---- */
+
+    /* Mission Section (Desktop) */
+
+    .mission .content-wrapper {
+        padding: 90px 0;
+    }
+
+    .mission p {
+        padding-top: 25px;
+    }
+
+    /* Contact Section (Desktop) */
+
+    .contact-section h3 {
+        margin-bottom: 30px;
+    }
+
+
+    /* ---- FAQ Page (Desktop) */
+
+    /* FAQ Section */
+
+    .faq h3 {
+        font-size: 1.125em;
+        line-height: 1;
+    }
+
+
+    
+
+
+
+    
+}
 
 /* ==========================================================================
    Print styles.
