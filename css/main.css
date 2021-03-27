@@ -232,6 +232,7 @@ footer .footer-content {
 }
 
 footer .contact {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -249,7 +250,7 @@ footer address p {
 }
 
 footer .social {
-    width: 60%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,7 +268,16 @@ footer .social-icons {
 footer .social-icons p {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+footer i {
+    background-color: #527158;
+    border-radius: 50%;
+    color: #e2e3ed;
+    font-size: 1.125em; 
+    line-height: 1.2;
+    padding: 10px;
 }
 
 footer .copyright {
@@ -608,11 +618,12 @@ aside h3 {
         padding: 75px 0;
     }
     footer .contact {
-        width: 30%;
+        flex-basis: 30%;
     }
+
     footer .social {
-        width: 30%;
-        padding-top: 0;
+        flex-basis: 30%;
+        padding: 0;
     }
     footer p {
         padding: 16px 0;
@@ -778,6 +789,16 @@ aside h3 {
 
     header nav ul {
         width: 140px;
+    }
+
+    /* Footer (Desktop) */
+    footer .contact {
+        flex-basis: 21%;
+    }
+
+    footer .social {
+        flex-basis: 21%;
+        padding: 0;
     }
 
     /* ---- Homepage (Desktop) ---- */
