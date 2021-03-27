@@ -689,6 +689,13 @@ aside h3 {
         width: 45%;
     }
 
+    /* Map Section (Tablet) */
+
+    .map figure {
+        /* height to width ratio of 350:768 */
+        padding-bottom: 45%;
+    }
+
     /* Contact Section (Tablet) */
 
     .contact-section {
@@ -821,6 +828,13 @@ aside h3 {
 
     .mission p {
         padding-top: 25px;
+    }
+
+    /* Map Section (Desktop) */
+
+    .map figure {
+        /* height to width ratio of 450:1200 */
+        padding-bottom: 37.5%;
     }
 
     /* Contact Section (Desktop) */
