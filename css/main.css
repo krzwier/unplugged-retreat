@@ -83,7 +83,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* ---- Global styles for mobile ---- */
+/* ---- MOBILE FIRST ---- */
+
+/* ---- Global Styles  ---- */
 
 html {
     font-size: 16px;
@@ -369,6 +371,8 @@ aside h3 {
 
 /* ---- About Page ---- */
 
+/* Mission Section */
+
 .mission {
     background-color: #527158;
     display: flex;
@@ -390,6 +394,28 @@ aside h3 {
 .mission h2 {
     margin: 0;
 }
+
+/* Map Section */
+
+.map figure {
+    width: 100%;
+    height: 0;
+    /* padding-bottom sets height to width ratio of 5:4 */
+    padding-bottom: 125%;
+    overflow: hidden;
+    position: relative;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* Contact Section */
 
 .contact-section {
     background-color: #2a423a;
