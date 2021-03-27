@@ -164,6 +164,14 @@ input[type=button] {
     text-transform: uppercase;
 }
 
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
 /* ---- Header ---- */
 
 header {
@@ -175,10 +183,6 @@ header {
 header .logo {
     width: 60%;
     padding: 15px 0;
-}
-
-header .logo img {
-    width: 100%;
 }
 
 header .header-divider {
@@ -274,9 +278,8 @@ footer .copyright {
 /* ---- Hero Area ---- */
 
 .hero-area {
-    background: url(../img/jake-melara-30679-unsplash.jpg);
+    background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
     background-size: cover;
-    background-position: center;
     height: 500px;
     display: flex;
     justify-content: center;
@@ -316,7 +319,7 @@ aside h3 {
 /* ---- Amenities Section ---- */
 
 .features {
-    background: url(../img/rawpixel-800820-unsplash.jpg);
+    background: url('../img/rawpixel-800820-unsplash.jpg') center no-repeat #333;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -360,8 +363,8 @@ aside h3 {
     padding: 25px 0 45px 0;
 }
 
-.reviews img {
-    width: 100%;
+.reviews .content-wrapper {
+    justify-content: flex-start;
 }
 
 /* ---- About Page ---- */
@@ -550,7 +553,7 @@ aside h3 {
         width: 50%;
         padding: 30px 0;
     }
-    header .logo img {
+    header .logo figure {
         width: 67.5%
     }
     header .header-divider {
@@ -634,7 +637,7 @@ aside h3 {
     .reviews {
         padding: 70px 0 100px 0;
     }
-    .reviews .content-wrapper {
+    .reviews .review-content {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -708,7 +711,7 @@ aside h3 {
     /* Global Styles (Desktop) */
 
     .content-wrapper {
-        width: 80%;
+        width: 960px;
     }
 
     h1 {
@@ -733,12 +736,12 @@ aside h3 {
 
     /* Header (Desktop) */
 
-    header .logo img{
-        max-width: 300px;
+    header .logo figure {
+        width: 280px;
     }
 
     header nav ul {
-        max-width: 180px;
+        width: 140px;
     }
 
     /* ---- Homepage (Desktop) ---- */
@@ -765,6 +768,9 @@ aside h3 {
 
     /* Amenities Section (Desktop) */
 
+    .features .content-wrapper {
+        justify-content: flex-start;
+    }
     .features .features-items {
         padding: 50px 0 15px 0;
     }
@@ -775,7 +781,7 @@ aside h3 {
 
     /* Reviews Section (Desktop) */
 
-    .reviews .content-wrapper {
+    .reviews .review-content {
         padding-top: 60px;
     }
 
