@@ -312,7 +312,6 @@ aside .form {
     justify-content: center;
     flex-flow: row wrap;
 }
-
 aside h3 {
     width: 100%;
     margin: 30px 0 10px 0;
@@ -345,6 +344,7 @@ aside h3 {
 }
 
 .features .fontawesome-icon {
+    font-size: 3.25em;
     text-align: center;
     padding: 16px 0;
 }
@@ -656,6 +656,9 @@ aside h3 {
     }
     .features article {
         flex-basis: 35%;
+    }
+    .features .fontawesome-icon {
+        font-size: 4.5em;
     }
 
     /* Reviews Section (Tablet) */
